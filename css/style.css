@@ -1,115 +1,213 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
+
+    background-color: #000;
+    color: #fff;
+    /* Agar teks tetap terbaca */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background-color: #33599c;
-    color: white;
+}
+
+header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
     align-items: center;
-  }
-  
-  .logo img {
+    background-color: #111;
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(32, 105, 126, 0.995);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
     height: 40px;
-    vertical-align: middle;
-  }
-  
-  .logo span {
-    margin-left: 10px;
-    font-size: 24px;
+}
+
+.logo span {
+    font-size: 22px;
     font-weight: bold;
-  }
-  
-  nav ul {
+    color: white;
+}
+
+/* navigasi */
+nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 16px;
     margin: 0;
     padding: 0;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-  }
-  
-  .banner {
-    padding: 50px;
-    text-align: center;
-    background-color: #eee;
-  }
-  
-  #portfolio {
+    padding: 10px 16px;
+    background-color: #222;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #18a9d5;
+}
+
+/* bagian atas */
+.highlight-name {
+    color: #18a9d5;
+    /* Ganti dengan warna yang kamu suka */
+    font-weight: bold;
+}
+
+.banner {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Supaya responsif di layar kecil */
+    /* Jarak antara teks dan foto */
+}
+
+.text-left h1 {
+    font-size: 2.5rem;
+    padding-left: 80px;
+}
+
+.text-left {
+    flex: 1;
+    min-width: 350px;
+}
+
+.text-left ul {
+    font-size: 1.7rem;
+    padding-left: 150px;
+}
+
+.photo {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    /* Opsional: biar sudutnya membulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Opsional: bayangan */
+}
+
+.siapa-saya-btn {
+    margin-top: 20px;
+    margin-left: 80px;
+    padding: 10px 20px;
+    background-color: #18a9d5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.1s ease, color 0.1s eas
+}
+
+.siapa-saya-btn:hover {
+    background-color: #18a9d5;
+    /* Warna lebih gelap saat hover */
+}
+
+.siapa-saya-btn:active {
+    background-color: white;
+    /* Warna putih saat diklik */
+    color: #18a9d5;
+    /* Warna teks berubah jadi biru */
+    transform: scale(0.97);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* bagian portofolio */
+#portfolio {
     padding: 30px;
     background-color: #f5f5f5;
-  }
-  
-  .portfolio-container {
+}
+
+.portfolio-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-  }
-  
-  .portfolio-item {
+}
+
+.portfolio-item {
     text-align: center;
     width: 150px;
-  }
-  
-  .portfolio-item img {
+}
+
+.portfolio-item img {
     width: 100px;
     height: 100px;
     object-fit: contain;
-  }
-  
-  .contact {
+}
+
+.contact {
     padding: 30px;
-  }
-  
-  .form-container {
+}
+
+.form-container {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     align-items: flex-start;
     margin-top: 20px;
-  }
-  
-  form {
+}
+
+form {
     flex: 1;
     min-width: 250px;
-  }
-  
-  #formResult {
+}
+
+#formResult {
     flex: 1;
     border: 2px solid #3200d7;
     padding: 20px;
     min-height: 200px;
     background-color: #f9f9f9;
-  }
-  
-  footer {
+}
+
+footer {
     text-align: center;
     background-color: #3200d7;
     color: white;
     padding: 10px;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .portfolio-container {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .form-container {
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
-  
+}

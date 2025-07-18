@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Profile</title>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo"/>
+      <span>REVO</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h1>Welcome to Our Company</h1>
+      <p id="welcome-text">Hi <span id="username"></span></p>
+    </section>
+
+    <section id="profile">
+      <h2>About the Company</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Vision</h3>
+      <p>To become a leading tech solution company globally.</p>
+      <h3>Mission</h3>
+      <ul>
+        <li>Deliver high-quality software products.</li>
+        <li>Empower businesses with technology.</li>
+      </ul>
+    </section>
+
+    <section id="portfolio">
+      <h2>Our Portfolio</h2>
+      <div class="portfolio-container">
+        <div class="portfolio-item">
+          <img src="img/html.png" alt="HTML Skill" />
+          <p>HTML</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="img/css.png" alt="CSS Skill" />
+          <p>CSS</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="img/laravel.png" alt="JavaScript Skill" />
+          <p>Laravel</p>
+        </div>
+        <div class="portfolio-container">
+          <div class="portfolio-item">
+            <img src="img/html.png" alt="HTML Skill" />
+            <p>HTML</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="img/css.png" alt="CSS Skill" />
+            <p>CSS</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="img/laravel.png" alt="JavaScript Skill" />
+            <p>Laravel</p>
+          </div>
+          <div class="portfolio-container">
+            <div class="portfolio-item">
+              <img src="img/html.png" alt="HTML Skill" />
+              <p>HTML</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/css.png" alt="CSS Skill" />
+              <p>CSS</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/laravel.png" alt="JavaScript Skill" />
+              <p>Laravel</p>
+            </div>
+            <div class="portfolio-container">
+              <div class="portfolio-item">
+                <img src="img/html.png" alt="HTML Skill" />
+                <p>HTML</p>
+              </div>
+              <div class="portfolio-item">
+                <img src="img/css.png" alt="CSS Skill" />
+                <p>CSS</p>
+              </div>
+              <div class="portfolio-item">
+                <img src="img/laravel.png" alt="JavaScript Skill" />
+                <p>Laravel</p>
+              </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Message Us</h2>
+      <div class="form-container">
+        <form id="contactForm">
+          <label>Name:<br><input type="text" id="name" required></label><br>
+          <label>Email:<br><input type="email" id="email" required></label><br>
+          <label>Phone Number:<br><input type="tel" id="phone" required></label><br>
+
+          <label>Jenis Kelamin:</label><br>
+          <input type="radio" id="laki" name="gender" value="Laki-laki">
+          <label for="laki">Laki-laki</label><br>
+          <input type="radio" id="perempuan" name="gender" value="Perempuan">
+          <label for="perempuan">Perempuan</label><br><br>
+
+          <label>Message:<br><textarea id="message" required></textarea></label><br>
+          <button type="submit">Submit</button>
+        </form>
+
+        <div id="formResult"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Our Company. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

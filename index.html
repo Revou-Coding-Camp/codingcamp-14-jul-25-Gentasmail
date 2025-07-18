@@ -6,6 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Company Profile</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #000000;
+      color: white;
+      padding: 10px;
+    }
+
+    footer p {
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,7 +43,8 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#profile">Our Profile</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Message Us</a></li>
       </ul>
     </nav>
@@ -45,100 +71,207 @@
     </section>
     <hr>
     <section id="profile">
-      <h2>About the Company</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <h3>Vision</h3>
-      <p>To become a leading tech solution company globally.</p>
-      <h3>Mission</h3>
-      <ul>
-        <li>Deliver high-quality software products.</li>
-        <li>Empower businesses with technology.</li>
-      </ul>
+      <h2>ABOUT ME</h2>
+      <br>
+      <div class="box-container">
+        <!-- Vision -->
+        <div class="box text-black">
+          <h3>Vision</h3>
+          <ol class="justify-text">
+            <li>Menjadi profesional IT yang unggul dan berintegritas dalam setiap aspek pekerjaan.</li>
+            <li>Membangun karier yang kuat di bidang database, pemrograman web, dan kecerdasan buatan.</li>
+            <li>Mewujudkan transformasi digital yang berdampak di lingkungan kerja dan masyarakat.</li>
+            <li>Menjadi pembelajar seumur hidup yang terbuka terhadap perkembangan <br>teknologi terbaru.</li>
+            <li>Menciptakan sistem dan solusi IT yang efisien, aman, dan mudah digunakan.</li>
+            <li>Berkontribusi dalam pengembangan sistem informasi yang mempermudah pengambilan keputusan.</li>
+            <li>Menjadi bagian dari tim yang kolaboratif dan berorientasi pada solusi.</li>
+            <li>Menjunjung tinggi profesionalisme, kedisiplinan, dan tanggung jawab dalam setiap pekerjaan.</li>
+            <li>Menjadi pribadi yang adaptif, inovatif, dan mampu bersaing di era digital global.</li>
+            <li>Meninggalkan jejak positif dalam setiap proyek dan lingkungan kerja yang saya jalani.</li>
+          </ol>
+        </div>
+
+        <!-- Mission -->
+        <div class="box text-black">
+          <h3>Mission</h3>
+          <ol class="justify-text">
+            <li>Meningkatkan keahlian teknis melalui pelatihan, sertifikasi, dan praktik langsung <br>di lapangan.</li>
+            <li>Menerapkan solusi berbasis teknologi untuk menyelesaikan permasalahan bisnis.</li>
+            <li>Mengembangkan aplikasi web dan sistem informasi yang user-friendly dan scalable.</li>
+            <li>Mengelola database secara optimal demi menjaga keamanan dan integritas data.</li>
+            <li>Berpartisipasi aktif dalam tim dengan komunikasi yang baik dan sikap profesional.</li>
+            <li>Mengikuti perkembangan teknologi seperti AI, machine learning, dan cloud computing.</li>
+            <li>Menyelesaikan setiap tugas dengan detail, tepat waktu, dan sesuai standar kualitas.</li>
+            <li>Memberikan pelayanan dan dukungan teknis yang responsif dan solutif.</li>
+            <li>Membina hubungan kerja yang sehat dan saling menghargai dalam tim maupun antar divisi.</li>
+            <li>Berkontribusi dalam misi perusahaan untuk tumbuh, efisien, dan berdaya saing tinggi secara teknologi.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </section>
 
-    <section id="portfolio">
-      <h2>Our Portfolio</h2>
-      <div class="portfolio-container">
-        <div class="portfolio-item">
+    <section id="skill">
+      <br>
+      <br>
+      <h2>MY SKILL</h2>
+      <br>
+      <div class="skill-container">
+        <div class="skill-item">
           <img src="img/html.png" alt="HTML Skill" />
           <p>HTML</p>
         </div>
-        <div class="portfolio-item">
+        <div class="skill-item">
           <img src="img/css.png" alt="CSS Skill" />
           <p>CSS</p>
         </div>
-        <div class="portfolio-item">
-          <img src="img/laravel.png" alt="JavaScript Skill" />
+        <div class="skill-item">
+          <img src="img/js.png" alt="JavaScript Skill" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/uml.png" alt="UML Skill" />
+          <p>ArgoUML</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/miro.png" alt="Miro Skill" />
+          <p>Miro</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/balsamiq.png" alt="Balsamiq Skill" />
+          <p>Balsamiq</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/figma.png" alt="Figma Skill" />
+          <p>Figma</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/vsc.png" alt="VSCode Skill" />
+          <p>VSCode</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/laravel.png" alt="Laravel Skill" />
           <p>Laravel</p>
         </div>
-        <div class="portfolio-container">
-          <div class="portfolio-item">
-            <img src="img/html.png" alt="HTML Skill" />
-            <p>HTML</p>
-          </div>
-          <div class="portfolio-item">
-            <img src="img/css.png" alt="CSS Skill" />
-            <p>CSS</p>
-          </div>
-          <div class="portfolio-item">
-            <img src="img/laravel.png" alt="JavaScript Skill" />
-            <p>Laravel</p>
-          </div>
-          <div class="portfolio-container">
-            <div class="portfolio-item">
-              <img src="img/html.png" alt="HTML Skill" />
-              <p>HTML</p>
-            </div>
-            <div class="portfolio-item">
-              <img src="img/css.png" alt="CSS Skill" />
-              <p>CSS</p>
-            </div>
-            <div class="portfolio-item">
-              <img src="img/laravel.png" alt="JavaScript Skill" />
-              <p>Laravel</p>
-            </div>
-            <div class="portfolio-container">
-              <div class="portfolio-item">
-                <img src="img/html.png" alt="HTML Skill" />
-                <p>HTML</p>
-              </div>
-              <div class="portfolio-item">
-                <img src="img/css.png" alt="CSS Skill" />
-                <p>CSS</p>
-              </div>
-              <div class="portfolio-item">
-                <img src="img/laravel.png" alt="JavaScript Skill" />
-                <p>Laravel</p>
-              </div>
-            </div>
+        <div class="skill-item">
+          <img src="img/mysql.png" alt="MySQL Skill" />
+          <p>MySQL</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/sqlite.png" alt="SQLite Skill" />
+          <p>SQLite</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/postgree.png" alt="PostgreSQL Skill" />
+          <p>PostgreSQL</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/mikrotik.png" alt="Mikrotik" />
+          <p>Mikrotik</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/cisco.png" alt="Cisco" />
+          <p>Cisco</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/jira.png" alt="Jira" />
+          <p>Jira</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/anydesk.png" alt="Anydesk" />
+          <p>AnyDesk</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/kaggle.png" alt="Kaggle" />
+          <p>Kaggle</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/os.png" alt="OS" />
+          <p>Sistem Operasi</p>
+        </div>
     </section>
 
+    <section id="experience">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>MY EXPERIENCE</h2>
+      <br>
+      <div class="experience-container">
+        <div class="experience-item">
+          <div class="experience-image">
+            <img src="img/higertech.jpg" alt="Company Logo" />
+          </div>
+          <div class="experience-content">
+            <h3>PT Higertech Karya Sinergi</h3>
+            <h4 class="job-title">Software Requirements Analyst and UI/UX Designer</h4>
+            <p>
+              saya bertanggung jawab menganalisis kebutuhan perangkat lunak menggunakan UML (Use Case, Activity, dan
+              Sequence Diagrams), merancang mockup serta tampilan UI/UX web menggunakan Figma dan Balsamiq sesuai
+              identitas perusahaan. Saya mengembangkan tampilan terbaru dari website profil perusahaan sesuai permintaan
+              pimpinan dengan skema warna merah dan biru, serta menambahkan fitur seperti berita terbaru, scrolling
+              otomatis pada beranda, peta interaktif dengan simbol deteksi gunung dan notifikasi wilayah tertentu.
+              Selain itu, saya juga membuat popup video perkenalan perusahaan dan fitur pemesanan produk melalui
+              WhatsApp untuk memudahkan transaksi, serta menyusun dokumentasi spesifikasi kebutuhan sistem dan alur
+              proses sebagai referensi pengembangan selanjutnya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section class="contact" id="contact">
+      <br>
       <h2>Message Us</h2>
       <div class="form-container">
         <form id="contactForm">
-          <label>Name:<br><input type="text" id="name" required></label><br>
-          <label>Email:<br><input type="email" id="email" required></label><br>
-          <label>Phone Number:<br><input type="tel" id="phone" required></label><br>
-
-          <label>Jenis Kelamin:</label><br>
-          <input type="radio" id="laki" name="gender" value="Laki-laki">
-          <label for="laki">Laki-laki</label><br>
-          <input type="radio" id="perempuan" name="gender" value="Perempuan">
-          <label for="perempuan">Perempuan</label><br><br>
-
-          <label>Message:<br><textarea id="message" required></textarea></label><br>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+          </div>
+    
+          <div class="form-group">
+            <label>Jenis Kelamin</label>
+            <div class="gender-group">
+              <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+              <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+    
           <button type="submit">Submit</button>
         </form>
-
+    
         <div id="formResult"></div>
       </div>
     </section>
-  </main>
+    
 
-  <footer>
-    <p>&copy; 2025 Our Company. All rights reserved.</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Our Company. All rights reserved.</p>
+    </footer>
+    
 
   <script src="js/script.js"></script>
 </body>

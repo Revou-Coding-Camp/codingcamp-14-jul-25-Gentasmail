@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 
     background-color: #000;
@@ -28,6 +32,9 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+    color: white;
+    /* atau warna sesuai desain kamu */
 }
 
 .logo img {
@@ -35,6 +42,7 @@ header {
 }
 
 .logo span {
+    margin-left: 10px;
     font-size: 22px;
     font-weight: bold;
     color: white;
@@ -145,69 +153,317 @@ nav ul li a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* bagian portofolio */
-#portfolio {
+
+/* bagian profile */
+#profile h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #18a9d5;
+    /* Biru elegan, bisa kamu ubah */
+    margin-bottom: 10px;
+}
+
+#profile p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#profile {
+    text-align: left;
+    padding: 80px;
+    /* Opsional agar lebih rapi */
+}
+
+#profile h3,
+#profile ol,
+#profile ul {
+    text-align: left;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffffe2;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-black {
+    color: black;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+/* bagian skill */
+
+#skill h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #18a9d5;
+    /* Biru elegan, bisa kamu ubah */
+    margin-bottom: 10px;
+}
+
+#skill {
     padding: 30px;
     background-color: #f5f5f5;
 }
 
-.portfolio-container {
-    display: flex;
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 5 kotak per baris */
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-}
-
-.portfolio-item {
-    text-align: center;
-    width: 150px;
-}
-
-.portfolio-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-
-.contact {
-    padding: 30px;
-}
-
-.form-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-
-form {
-    flex: 1;
-    min-width: 250px;
-}
-
-#formResult {
-    flex: 1;
-    border: 2px solid #3200d7;
+    justify-items: center;
     padding: 20px;
-    min-height: 200px;
-    background-color: #f9f9f9;
 }
 
-footer {
+.skill-item {
+    background-color: #e0f0ff;
+    /* biru muda */
+    border: 1px solid #2196f3;
+    border-radius: 10px;
+    padding: 16px;
+    width: 150px;
     text-align: center;
-    background-color: #3200d7;
-    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+.skill-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* bagian experience */
+#experience h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #18a9d5;
+    /* Biru elegan, bisa kamu ubah */
+    margin-bottom: 10px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.experience-item {
+    display: flex;
+    align-items: stretch;
+    /* memastikan tinggi sejajar */
+    /* align-items: flex-start; */
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #18a9d5;
     padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .portfolio-container {
+.experience-image {
+    border-bottom-left-radius: 40px;
+    width: 250px;
+    height: 200px;
+    background-color: #f0f0f0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    /* <<< Tambahan ini membuat jarak */
+    overflow: hidden;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 40px;
+}
+
+.experience-content {
+    border-top-right-radius: 40px;
+    padding: 15px;
+    flex: 1;
+    /* supaya box teks menyesuaikan sisa ruang */
+    background-color: white;
+    text-align: justify;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* teks di tengah vertikal */
+}
+
+.experience-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #18a9d5;
+}
+
+.experience-content p {
+    margin: 0;
+    color: #333;
+
+}
+
+.experience-content {
+    color: black;
+}
+
+.experience-content h4.job-title {
+    margin-bottom: 4px;
+    /* kecilin jarak ke bawah */
+    margin-top: 0;
+    /* hilangkan jarak atas kalau perlu */
+    color: black;
+    /* opsional, pastikan teks hitam */
+}
+
+
+/* formulir */
+
+#contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #18a9d5;
+    /* Biru elegan, bisa kamu ubah */
+    margin-bottom: 10px;
+}
+
+.contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: #000;
+}
+
+.form-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.gender-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    .gender-group {
         flex-direction: column;
-        align-items: center;
     }
 
-    .form-container {
-        flex-direction: column;
+    form {
+        padding: 15px;
+    }
+
+    .contact h2 {
+        font-size: 20px;
+    }
+
+
+    #formResult {
+        flex: 1;
+        border: 2px solid #3200d7;
+        padding: 20px;
+        min-height: 200px;
+        background-color: #f9f9f9;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #3200d7;
+        color: white;
+        padding: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .portfolio-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container {
+            flex-direction: column;
+        }
     }
 }

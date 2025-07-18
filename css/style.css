@@ -352,11 +352,13 @@ nav ul li a:hover {
 
 /* formulir */
 
+/* FORMULIR */
+
 #contact h2 {
     text-align: center;
     font-size: 2rem;
     color: #18a9d5;
-    /* Biru elegan, bisa kamu ubah */
+
     margin-bottom: 10px;
 }
 
@@ -365,6 +367,7 @@ nav ul li a:hover {
     background-color: #f9f9f9;
     text-align: center;
 }
+
 
 
 .form-container {
@@ -412,7 +415,7 @@ textarea {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #18a9d5;
     color: white;
     padding: 12px;
     border: none;
@@ -423,10 +426,49 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0d8cb8;
 }
 
-/* Responsif untuk layar kecil */
+/* HASIL SUBMIT FORMULIR */
+
+#formResult {
+    background-color : #ffffff;       /* Latar kotak putih */
+    color            : #000000;       /* Teks hitam */
+    border           : 1px solid #ccc;
+    padding          : 15px;
+    margin-top       : 15px;
+    border-radius    : 8px;
+    max-width        : 500px;
+    word-wrap        : break-word;
+    text-align       : left;
+    margin-left      : auto;
+    margin-right     : auto;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 480px) {
     .gender-group {
         flex-direction: column;
@@ -438,32 +480,5 @@ button:hover {
 
     .contact h2 {
         font-size: 20px;
-    }
-
-
-    #formResult {
-        flex: 1;
-        border: 2px solid #3200d7;
-        padding: 20px;
-        min-height: 200px;
-        background-color: #f9f9f9;
-    }
-
-    footer {
-        text-align: center;
-        background-color: #3200d7;
-        color: white;
-        padding: 10px;
-    }
-
-    @media screen and (max-width: 768px) {
-        .portfolio-container {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .form-container {
-            flex-direction: column;
-        }
     }
 }

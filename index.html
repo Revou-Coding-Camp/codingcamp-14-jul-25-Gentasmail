@@ -33,6 +33,8 @@
   </style>
 </head>
 
+
+
 <body>
   <header>
     <div class="logo">
@@ -69,6 +71,18 @@
         </div>
       </div>
     </section>
+
+    <!-- Modal Popup -->
+    <div id="popupModal" class="popup-modal">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Tentang Saya</h2>
+        <p>Nama saya Genta Awaludin Ismail, seorang lulusan S.Kom dari IT Garut yang memiliki minat di bidang IT
+          Support, Database Administrator, Desain UI/UX, dan Web Developer. Saya antusias dalam mengembangkan solusi
+          teknologi yang efisien dan ramah pengguna.</p>
+      </div>
+    </div>
+
     <hr>
     <section id="profile">
       <h2>ABOUT ME</h2>
@@ -224,11 +238,13 @@
           </div>
         </div>
       </div>
+      <br>
+      <br>
+      <br>
     </section>
 
 
     <section class="contact" id="contact">
-      <br>
       <h2>Message Us</h2>
       <div class="form-container">
         <form id="contactForm">
@@ -236,17 +252,17 @@
             <label for="name">Name</label>
             <input type="text" id="name" required>
           </div>
-    
+
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" id="email" required>
           </div>
-    
+
           <div class="form-group">
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" required>
           </div>
-    
+
           <div class="form-group">
             <label>Jenis Kelamin</label>
             <div class="gender-group">
@@ -254,26 +270,45 @@
               <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
             </div>
           </div>
-    
+
           <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" required></textarea>
           </div>
-    
+
           <button type="submit">Submit</button>
         </form>
-    
+
         <div id="formResult"></div>
       </div>
     </section>
-    
+
 
     <footer>
-      <p>&copy; 2025 Our Company. All rights reserved.</p>
+      <p>&copy; 2025 By Genta Awaludin Ismail.</p>
     </footer>
-    
 
-  <script src="js/script.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+      document.querySelector(".siapa-saya-btn").addEventListener("click", function () {
+        document.getElementById("popupModal").style.display = "block";
+      });
+    
+      document.querySelector(".close-btn").addEventListener("click", function () {
+        document.getElementById("popupModal").style.display = "none";
+      });
+    
+      // Menutup modal saat klik di luar popup
+      window.addEventListener("click", function (event) {
+        const modal = document.getElementById("popupModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+
 </body>
 
 </html>
